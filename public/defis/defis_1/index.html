@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="fr">
+    <head>
+        
+        <title>Websitez-nous</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Défis numéro 1">
+        <meta name="author" content="Code Save The Queen">
+        <script type="text/javascript" src="./../../js/js.js" ></script>
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Custom fonts for this template -->
+        <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        
+        <!-- Custom styles for this template -->
+        <link href="../../css/freelancer.min.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Websiter</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            </div>
+          </div>
+        </nav>
+        
+        <!-- Header -->
+        <header class="masthead bg-primary text-white text-center">
+          <div class="container">
+            <img class="img-fluid mb-5 d-block mx-auto" src="" alt="">
+            <h1 class="text-uppercase mb-0">Créer votre propre site Web facilement et gratuitement !</h1>
+            <h2 class="font-weight-light mb-0">Qu'attendez vous ? Lancez-vous !</h2>
+            <a class="btn btn-light " href="#">J'y vais</a>
+          </div>
+        </header>
+        
+        
+        <form action="/create" method="post">
+            <div class="form-group">
+              <label for="FormControlInputTitre">Saisissez le titre de votre site</label>
+              <input type="text" class="w-25" name="siteName" class="form-control" id="FormControlInputTitre" placeholder="toto">
+            </div>
+            <div class="form-group" id="conteneurClone">
+              <label for="FormControlInputNav">Saisissez l'en tête de votre site</label>
+              
+              <div class="monClone">
+                  <input type="checkbox" />
+                  <label>Lien de navigation : </label>
+                    <input type="text" class="w-25" name="siteName[]" class="form-control" id="FormControlInputNav">
+              </div>
+            </div>
+              
+            <input type="button" id="ajoutButton" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismis" value="Ajouter des menus" onclick="ajoutMenu()">
+            <input type="button" id="supprButton" class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismis" value="Supprimer des menus" onclick="supprimerMenu()">
+            
+            <div class="form-group">
+              <label for="FormControlInputBody">Saisissez le corps de votre site</label>
+              <textarea style="resize: none; width:25vw;" class="form-control" name="bodyText" id="FormControlInputBody" rows="3" placeholder="Vous pouvez écrire votre texte"></textarea>
+            </div>
+            <div class="form-group">
+            <label>Saississez le réseaux social que vous souhaitez ajouter sur votre site</label>
+            <ul>
+                <li> facebook </li>
+            
+            <div class="form-group">
+                <label> Saisissez le nom de votre compte facebook</label>
+                <input type="text" name="fb"  class="form-control w-25" placeholder="facebook.com/toto">
+                <input type="text" name="twitter" class="form-control w-25" placeholder="twitter.com/toto">
+            </div>
+            <button class="btn btn-primary" type="submit"> Créer mon site </button>
+        </form>
+
+    
+    <!-- Footer -->
+        <footer class="footer text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Université</h4>
+                <p class="lead mb-0">UPPA
+                  <br>64000 Pau</p>
+              </div>
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Réseaux Sociaux</h4>
+                <ul class="list-inline mb-0">
+                <!--Facebook-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                  </li>
+                <!--Twitter-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                <!--Linkedin-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-uppercase mb-4">Code Save The Queen</h4>
+                <p class="lead mb-0"> Slogan: <i>"undifined"</i></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+    <!-- Copyright -->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+              <small>Copyright &copy; Code Save The Queen 2018 - All right Reserved</small>
+            </div>
+        </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-to-top d-lg-none position-fixed ">
+          <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+        
+                    <!-- Bootstrap core JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> 
+
+            <!-- Plugin JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+            <!-- Contact Form JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js"></script>
+            <script src="./../../js/contact_me.js"></script>
+
+            <!-- Custom scripts for this template -->
+            <script src="./../../js/freelancer.min.js"></script>
+    </body>
+</html>
