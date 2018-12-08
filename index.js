@@ -19,10 +19,17 @@ app.get('/',function(req,res)
     res.sendFile('index.html',{root:'./public/index.html'});
 });
 
+app.post("/siteNameCheck",function(req,res)
+{
+    res.send('hello');
+});
+
 app.post("/create",function(req,res)
 {
+    /*
     client = req.body
     createFiles(client.siteName);
+    */
 });
 
 function createFiles(fileName)
@@ -100,13 +107,13 @@ function injectionDebNav(file)
 
 function injectionNavA(file)
 {
-    let myNav= "";
+    let myNav= "";/*
     for(let i = 0; i < client.nav.length; i++)
     {
         myNav += 
 `                   <a class="nav-link active" href="#">${client.nav[i]}</a>
 `;
-    }
+    }*/
     fs.appendFile(file,myNav,err =>{if(err) throw err});
 }
 

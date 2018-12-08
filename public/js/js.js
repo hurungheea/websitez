@@ -16,3 +16,8 @@ function supprimerMenu()
                 elt.parentNode.remove();
         });
 }
+
+function siteNameCheck()
+{
+    console.log("kokivide");
+}
