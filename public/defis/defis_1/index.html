@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="fr">
+    <head>
+        
+        <title>Websitez-nous</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Défis numéro 1">
+        <meta name="author" content="Code Save The Queen">
+        
+        <script type="text/javascript" src="./../../js/js.js" ></script>
+        
+        <!-- Bootstrap CSS -->
+        <link  rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+        <!-- Custom fonts -->
+        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+        
+        <!-- Plugin CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+    
+        <!-- Custom styles for this template -->
+        <link href="../../css/freelancer.min.css" rel="stylesheet">
+        
+    </head>
+    
+    <body id="page-top">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../../index.html">
+                <i class="fas fa-code"></i>
+                Code Save The Queen
+                <i class="fas fa-code"></i>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#defis">Websitez-nous</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <!-- Header -->
+        <header class="masthead bg-primary text-white text-center" id='defis'>
+            <div class="container">
+                <h1 class="text-uppercase mb-0 display-4">Créer votre propre site Web facilement et gratuitement !</h2>
+                <br/>
+                <h2 class="font-weight-light mb-0">Qu'attendez vous ? Lancez-vous !</h2>
+                <br/>
+                <a class="btn btn-light btn-lg js-scroll-trigger" href="#lancement">J'y vais</a>
+          </div>
+        </header>
+        
+        <!-- Websitez-nous Section -->
+        <section class="portfolio" id="lancement">
+            <div class="container">
+              <h2 class="text-center text-uppercase text-secondary mb-0">Sélectionnez le modèle que vous souhaitez pour votre site</h2>
+              <br/>
+              <div class="row justify-content-md-center">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-thumbnail rounded" src="../../img/portfolio/entreprise.jpg" width="300" height="300">
+                    </a>
+                    <h2>Site entreprise</h2>
+                    <p> Avec ce template vous pourrez facilement créer un site adapté pour décrire votre entreprise</p>
+                    <a class="btn btn-secondary btn-lg portfolio-item" href="#portfolio-modal-1" role="button">Choisir</a>
+                </div>
+                <div class="col-md-6 col-lg-4 text-center">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                            <i class="fas fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-thumbnail rounded" src="../../img/portfolio/e-commerce.jpg" width="300" height="300">
+                    </a>
+                    <h2>Site e-commerce</h2>
+                    <p> Avec ce template vous pourrez facilement créer un site adapté pour vendre vos articles</p>
+                    <a class="btn btn-secondary btn-lg portfolio-item" href="#portfolio-modal-2" role="button">Choisir</a>
+                </div>
+            </div>
+              </div>
+        </section>
+        
+        
+        <!-- Entreprise -->
+        <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+            <div class="portfolio-modal-dialog bg-white">
+                <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                    <i class="fa fa-3x fa-times"></i>
+                </a>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-secondary text-uppercase mb-0">Site entreprise</h2>
+                            <br/>
+
+                            <!-- Saisie Utilisateur -->
+                            <div class="container">
+                                <form action="/create" method="post" name="sentMessage" id="creaSite" novalidate="novalidate">
+                                    <label for="FormControlInputUtil">Saisissez vos données personnelles</label>
+                                    <div class="form-group control-group">
+                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                            <label>Nom</label>
+                                            <input class="form-control" id="name" type="text" placeholder="Nom" required="required" data-validation-required-message="S'il vous plait entrez votre nom">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        </div>
+                                    <div class="form-group control-group">
+                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                          <label>Address E-mail</label>
+                                          <input class="form-control" id="email" type="email" placeholder="Address E-mail" required="required" data-validation-required-message="S'il vous plait entrez votre email address.">
+                                          <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie titre -->  
+                                    <div class="form-group">
+                                        <label for="FormControlInputNav">Saisisser le titre du site</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="inputGroup-sizing-default">Titre</span>
+                                            </div>
+                                            <input type="text" class="form-control w-25" name="siteName" placeholder="toto" data-validation-required-message="S'il vous plait entrer un titre à votre site.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie Menus --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneMenu">
+                                            <label for="FormControlInputNav">Saisisser les en-têtes du site</label>
+                                            <div class="monCloneMenu">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Menu</span>
+                                                    </div>
+                                                    <input type="text" class="form-control w-25" name="siteName[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer un titre à votre menu.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des menus" onclick="ajoutMenu()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des menus" onclick="supprimer()">
+                                    </div>
+                                    
+                                    <!-- Saisie catégories à vendre --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneCat">
+                                            <label for="FormControlInputNav">Inscriver les catégories des articles</label>
+                                            <div class="monCloneCat">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Catégorie</span>
+                                                    </div>
+                                                        <input type="text" class="form-control w-25" name="bodyCatElts[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer une catégorie.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des catégories" onclick="ajoutCatégorie()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des catégories" onclick="supprimer()">
+                                    </div>
+                                    
+                                    <!-- Saisie Items à vendre --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneArticle">
+                                            <label for="FormControlInputNav">Inscriver les articles avec leur prix</label>
+                                            <div class="monCloneArticle">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Article</span>
+                                                    </div>
+                                                        <input type="text" class="form-control w-25" name="bodyItemShopElts[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer un article.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="bodyPrixItemShopElts[]">
+                                                            <div class="input-group-append">
+                                                              <span class="input-group-text">€</span>
+                                                              <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                        </div>     
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des articles" onclick="ajoutArticle()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des articles" onclick="supprimer()">
+                                    </div>
+                                        
+                                    <!-- Saisie texte --> 
+                                    <div class="form-group">
+                                        <label for="FormControlInputNav">Saisisser le texte du site</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="inputGroup-sizing-default">Texte</span>
+                                            </div>
+                                            <textarea class="form-control" name="bodyText" placeholder="Vous pouvez écrire votre texte ici" data-validation-required-message="S'il vous plait entrer un texte à votre site"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie Raiseaux Sociaux --> 
+                                    <div class="form-group">
+                                        <label> Saisisser le nom de votre compte facebook</label>
+                                        <div class="form-group">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Facebook</span>
+                                                </div>
+                                                <input type="text" name="fb" class="form-control" placeholder="facebook.com/toto" data-validation-required-message="S'il vous plait entrer votre compte Facebook">
+                                                <p class="help-block text-danger"></p>
+                                                <div class="input-group-append">
+                                                    <span id="span" class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </span> 
+                                                </div>
+                                            </div>
+                                            <label> Saisisser le nom de votre compte twitter</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Twitter</span>
+                                                </div>
+                                                <input type="text" name="twitter" class="form-control" placeholder="twitter.com/toto" data-validation-required-message="S'il vous plait entrer votre compte Twitter">
+                                                <p class="help-block text-danger"></p>
+                                                <div class="input-group-append">
+                                                    <span id="span" class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des réseaux sociaux" onclick="ajout()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des réseaux sociaux" onclick="supprimer()">-->
+                                    </div>
+                                    <div id="success"></div>
+                                    <button class="btn btn-primary btn-lg" type="submit"> Créer mon site </button>
+                                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                                        <i class="fa fa-close"></i>
+                                    annuler</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-commerce -->
+        <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+            <div class="portfolio-modal-dialog bg-white">
+                <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+                    <i class="fa fa-3x fa-times"></i>
+                </a>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-secondary text-uppercase mb-0">Site entreprise</h2>
+                            <br/>
+                            
+                            <!-- Saisie Utilisateur -->
+                            <div class="container">
+                                <form action="/create" method="post" name="sentMessage" id="creaSite" novalidate="novalidate">
+                                    <label for="FormControlInputUtil">Saisissez vos données personnelles</label>
+                                    <div class="form-group control-group">
+                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                            <label>Nom</label>
+                                            <input class="form-control" id="name" type="text" placeholder="Nom" required="required" data-validation-required-message="S'il vous plait entrez votre nom">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        </div>
+                                    <div class="form-group control-group">
+                                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                          <label>Address E-mail</label>
+                                          <input class="form-control" id="email" type="email" placeholder="Address E-mail" required="required" data-validation-required-message="S'il vous plait entrez votre email address.">
+                                          <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie titre --> 
+                                    <div class="form-group">
+                                        <label for="FormControlInputNav">Saisisser le titre du site</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="inputGroup-sizing-default">Titre</span>
+                                            </div>
+                                            <input type="text" class="form-control w-25" name="siteName" placeholder="toto" data-validation-required-message="S'il vous plait entrer un titre à votre site.">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie Menus --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneMenu">
+                                            <label for="FormControlInputNav">Saisisser les en-têtes du site</label>
+                                            <div class="monCloneMenu">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Menu</span>
+                                                    </div>
+                                                    <input type="text" class="form-control w-25" name="siteName[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer un titre à votre menu.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des menus" onclick="ajoutMenu()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des menus" onclick="supprimer()">
+                                    </div>
+                                    
+                                    <!-- Saisie catégories à vendre --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneCat">
+                                            <label for="FormControlInputNav">Inscriver les catégories des articles</label>
+                                            <div class="monCloneCat">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Catégorie</span>
+                                                    </div>
+                                                        <input type="text" class="form-control w-25" name="bodyCatElts[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer une catégorie.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des catégories" onclick="ajoutCatégorie()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des catégories" onclick="supprimer()">
+                                    </div>
+                                    
+                                    <!-- Saisie Items à vendre --> 
+                                    <div class="form-group">
+                                        <div id="conteneurCloneArticle">
+                                            <label for="FormControlInputNav">Inscriver les articles avec leur prix</label>
+                                            <div class="monCloneArticle">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text" id="inputGroup-sizing-default">Article</span>
+                                                    </div>
+                                                        <input type="text" class="form-control w-25" name="bodyItemShopElts[]" placeholder="accueil"  data-validation-required-message="S'il vous plait entrer un article.">
+                                                    <p class="help-block text-danger"></p>
+                                                    <div class="input-group-append">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="bodyPrixItemShopElts[]">
+                                                            <div class="input-group-append">
+                                                              <span class="input-group-text">€</span>
+                                                              <span class="input-group-text">0.00</span>
+                                                            </div>
+                                                        </div>     
+                                                        <span id="span" class="input-group-text">
+                                                            <input type="checkbox">
+                                                        </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des articles" onclick="ajoutArticle()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des articles" onclick="supprimer()">
+                                    </div>
+                                        
+                                    <!-- Saisie texte --> 
+                                    <div class="form-group">
+                                        <label for="FormControlInputNav">Saisisser le texte du site</label>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="inputGroup-sizing-default">Texte</span>
+                                            </div>
+                                            <textarea class="form-control" name="bodyText" placeholder="Vous pouvez écrire votre texte ici" data-validation-required-message="S'il vous plait entrer un texte à votre site"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Saisie Raiseaux Sociaux --> 
+                                    <div class="form-group">
+                                        <label> Saisisser le nom de votre compte facebook</label>
+                                        <div class="form-group">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Facebook</span>
+                                                </div>
+                                                <input type="text" name="fb" class="form-control" placeholder="facebook.com/toto" data-validation-required-message="S'il vous plait entrer votre compte Facebook">
+                                                <p class="help-block text-danger"></p>
+                                                <div class="input-group-append">
+                                                    <span id="span" class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </span> 
+                                                </div>
+                                            </div>
+                                            <label> Saisisser le nom de votre compte twitter</label>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Twitter</span>
+                                                </div>
+                                                <input type="text" name="twitter" class="form-control" placeholder="twitter.com/toto" data-validation-required-message="S'il vous plait entrer votre compte Twitter">
+                                                <p class="help-block text-danger"></p>
+                                                <div class="input-group-append">
+                                                    <span id="span" class="input-group-text">
+                                                        <input type="checkbox">
+                                                    </span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--<input type="button" id="ajoutButton" class="btn btn-success" value="Ajouter des réseaux sociaux" onclick="ajout()">
+                                        <input type="button" id="supprButton" class="btn btn-danger" value="Supprimer des réseaux sociaux" onclick="supprimer()">-->
+                                    </div>
+                                    <div id="success"></div>
+                                    <button class="btn btn-primary btn-lg" type="submit"> Créer mon site </button>
+                                    <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                                        <i class="fa fa-close"></i>
+                                    annuler</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <!-- Footer -->
+        <footer class="footer text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Université</h4>
+                <p class="lead mb-0">UPPA
+                  <br>64000 Pau</p>
+              </div>
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Réseaux Sociaux</h4>
+                <ul class="list-inline mb-0">
+                <!--Facebook-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                  </li>
+                <!--Twitter-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                <!--Linkedin-->
+                  <li class="list-inline-item">
+                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                      <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-uppercase mb-4">Code Save The Queen</h4>
+                <p class="lead mb-0"> Slogan: <i>"undifined"</i></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    
+        <!-- Copyright -->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container">
+              <small>Copyright &copy; Code Save The Queen 2018 - All right Reserved</small>
+            </div>
+        </div>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-to-top d-lg-none position-fixed ">
+          <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+        
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script> 
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../js/freelancer.min.js"></script>
+        
+    </body>
+</html>
